@@ -24,7 +24,7 @@
     console.log('Hello I am a %s string!', '💩');
 
     // Styled
-    // console.log('%c I am some great text', 'font-size:50px; background:red; text-shadow: 10px 10px 0 blue')
+    console.log('%c I am some great text', 'font-size:50px; background:red; text-shadow: 10px 10px 0 blue')
 
     // warning!
     console.warn('OH NOOO');
@@ -36,6 +36,7 @@
     console.info('Crocodiles eat 3-4 people per year');
 
     // Testing
+
     const p = document.querySelector('p');
 
     console.assert(p.classList.contains('ouch'), 'That is wrong!');
@@ -50,6 +51,7 @@
     console.clear();
 
     // Grouping together
+
     dogs.forEach(dog => {
       console.groupCollapsed(`${dog.name}`);
       console.log(`This is ${dog.name}`);
@@ -74,6 +76,8 @@
     console.count('Steve');
 
     // timing
+
+    
     console.time('fetching data');
     fetch('https://api.github.com/users/wesbos')
       .then(data => data.json())
@@ -83,6 +87,8 @@
       });
 
     console.table(dogs);
+
+
 
   </script>
 </body>
